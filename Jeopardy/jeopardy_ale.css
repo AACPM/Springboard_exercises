@@ -1,0 +1,43 @@
+
+#jeopardy {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px;
+  }
+  
+  #jeopardy th {
+    background-color: #0074e4; 
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  #jeopardy td {
+    background-color: #f2f2f2; 
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  
+  #spin-container {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  
+  #start {
+    background-color: #0074e4; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 20px;
+  }
+  
