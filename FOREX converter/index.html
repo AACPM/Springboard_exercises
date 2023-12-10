@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOREX Converter</title>
+</head>
+<body>
+<form method="post" action="/convert">
+    <label for="from">From Currency:</label>
+    <input type="text" id="from_currency" name="from_currency">
+    <label for="to">To Currency:</label>
+    <input type="text" id="to_currency" name="to_currency">
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount" name="amount">
+    <input type="submit" value="convert">
+</form>
+
+{% if error %}
+    <p>{{ error }}</p>
+{% endif %}
+
+{% if result %}
+    <p>{{ result }}</p>
+{% endif %}
+
+</body>
+</html>
